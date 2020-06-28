@@ -1,9 +1,8 @@
 from PyQt5 import QtCore
 from .player import Player, GhostingPlayer
 import re
-import time
 
-__all__ = ['EasyMarker']
+__all__ = ['McBasicLib']
 
 
 class McBasicLib(QtCore.QObject):
@@ -17,6 +16,7 @@ class McBasicLib(QtCore.QObject):
     def __init__(logger, core):
         super(McBasicLib, self).__init__(core)
         self.logger = logger
+        Player.logger = logger
         self.Player = Player
         self.GhostingPlayer = GhostingPlayer
         core.sig_command.connect(self.on_command)

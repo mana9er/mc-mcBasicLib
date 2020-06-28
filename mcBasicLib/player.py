@@ -2,10 +2,10 @@ import json
 
 
 class Player:
+    logger = None
     
     def __init__(self, name):
         self.name = name
-        self.logger = None
 
     def is_console(self):
         return False
