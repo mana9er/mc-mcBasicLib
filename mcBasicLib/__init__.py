@@ -7,6 +7,7 @@ class Export(QtCore.QObject):
     def __init__(self):
         super().__init__()
 
+
 def load(logger, core):
     # Function "load" is required by mana9er-core.
     lib_inst = McBasicLib(logger, core)
@@ -17,3 +18,4 @@ def load(logger, core):
     exports.say = lib_inst.say
     exports.tellraw = lib_inst.tellraw
     exports.tell = lib_inst.tell
+    return exports
