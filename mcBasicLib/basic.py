@@ -11,14 +11,13 @@ class McBasicLib(QtCore.QObject):
     """
 
     # Signals
-    sig_player_input = QtCore.pyqtSignal(tuple)  # (Player, str) tuple, the player object and what he said.
+    sig_input = QtCore.pyqtSignal(tuple)  # (Player, str) tuple, the player object and what he said.
     
-    def __init__(logger, core):
-        super(McBasicLib, self).__init__(core)
+    def __init__(self, logger, core):
+        super().__init__(core)
+        self.core = core
         self.logger = logger
         Player.logger = logger
-        self.Player = Player
-        self.GhostingPlayer = GhostingPlayer
         core.sig_command.connect(self.on_command)
         core.sig_server_output.connect(self.on_server_output)
 

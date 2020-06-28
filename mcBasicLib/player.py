@@ -2,7 +2,6 @@ import json
 
 
 class Player:
-    logger = None
     
     def __init__(self, name):
         self.name = name
@@ -19,8 +18,8 @@ class Player:
                         return True
                 return False
         except (OSError, IOError):
-            logger.error('Fail to open ops.json when checking op permission. \
-                This is probably caused by a wrong working directory or an old version of minecraft server')
+            Player.logger.error('Fail to open ops.json when checking op permission. \
+                This is probably caused by a wrong working directory or an old version of Minecraft server.')
             return False
 
 
