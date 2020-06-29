@@ -1,6 +1,7 @@
 from PyQt5 import QtCore
 from .player import Player, GhostingPlayer
 import re
+import json
 
 __all__ = ['McBasicLib']
 
@@ -32,19 +33,25 @@ class McBasicLib(QtCore.QObject):
             if match_obj:  # some players said something
                 player = match_obj.group(1)
                 text = match_obj.group(2)
-                logger.debug('Player {} said: {}'.format(player, text))
+                self.logger.debug('Player {} said: {}'.format(player, text))
                 self.sig_input.emit((Player(player), text))
 
     def say(self, text):
         self.core.write_server('/say {}'.format(text))
 
     def tellraw(self, player, json_str):
-        self.core.write_server('/tellraw {} {}'.format(player.name, json_str)
+        if player.is_console():
+            self.logger.direct_output(json_str)
+        else:
+            self.core.write_server('/tellraw {} {}'.format(player.name, json_str))
 
     def tell(self, player, text, color='yellow', bold=False):
-        tell_obj = {
-            'text': text,
-            'color': color,
-            'bold': bold
-        }
-        self.core.write_server('/tellraw {} {}'.format(player.name, json.dumps(tell_obj)))
+        if player.is_console():
+            self.logger.direct_output(text)
+        else:
+            tell_obj = {
+                'text': text,
+                'color': color,
+                'bold': bold
+            }
+            self.core.write_server('/tellraw {} {}'.format(player.name, json.dumps(tell_obj)))
