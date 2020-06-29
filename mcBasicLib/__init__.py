@@ -2,6 +2,9 @@ from PyQt5 import QtCore
 from .basic import McBasicLib
 from .player import Player, GhostingPlayer
 
+dependencies = []
+
+
 class Export(QtCore.QObject):
     sig_input = QtCore.pyqtSignal(tuple)
     def __init__(self):
