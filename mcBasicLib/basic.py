@@ -40,13 +40,17 @@ class McBasicLib(QtCore.QObject):
         self.core.write_server('/say {}'.format(text))
 
     def tellraw(self, player, json_str):
-        if player.is_console():
+        if isinstance(player, Player) and player.is_console():
             self.logger.direct_output(json_str)
         else:
-            self.core.write_server('/tellraw {} {}'.format(player.name, json_str))
+            if isinstance(player, Player):
+                player_name = player.name
+            else:
+                player_name = player
+            self.core.write_server('/tellraw {} {}'.format(player_name, json_str))
 
     def tell(self, player, text, color='yellow', bold=False):
-        if player.is_console():
+        if isinstance(player, Player) and player.is_console():
             self.logger.direct_output(text)
         else:
             tell_obj = {
@@ -54,4 +58,8 @@ class McBasicLib(QtCore.QObject):
                 'color': color,
                 'bold': bold
             }
-            self.core.write_server('/tellraw {} {}'.format(player.name, json.dumps(tell_obj)))
+            if isinstance(player, Player):
+                player_name = player.name
+            else:
+                player_name = player
+            self.core.write_server('/tellraw {} {}'.format(player_name, json.dumps(tell_obj)))
