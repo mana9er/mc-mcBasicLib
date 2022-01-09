@@ -7,6 +7,8 @@ dependencies = []
 
 class Export(QtCore.QObject):
     sig_input = QtCore.pyqtSignal(tuple)
+    sig_login = QtCore.pyqtSignal(object)
+    sig_logout = QtCore.pyqtSignal(object)
     def __init__(self):
         super().__init__()
 
@@ -18,6 +20,8 @@ def load(logger, core):
     exports.Player = Player
     exports.GhostingPlayer = GhostingPlayer
     lib_inst.sig_input.connect(exports.sig_input)
+    lib_inst.sig_login.connect(exports.sig_login)
+    lib_inst.sig_logout.connect(exports.sig_logout)
     exports.say = lib_inst.say
     exports.tellraw = lib_inst.tellraw
     exports.tell = lib_inst.tell
