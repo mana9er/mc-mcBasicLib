@@ -54,7 +54,6 @@ players_and_mobs,<player> was slain by <player/mob> using <item>,死者被击杀
 players_and_mobs,<player> was fireballed by <player/mob>,死者被击杀者用火球烧死了
 players_and_mobs,<player> was fireballed by <player/mob> using <item>,死者被击杀者用[物品]发射的火球烧死了
 players_and_mobs,<player> was stung to death,死者被蛰死了
-players_and_mobs,<player> was stung to death by <player/mob>,死者被击杀者蛰死了
 players_and_mobs,death.attack.sting.item,death.attack.sting.item
 players_and_mobs,<player> was shot by a skull from <player/mob>,死者被击杀者发射的头颅射中了
 players_and_mobs,death.attack.witherSkull.item,death.attack.witherSkull.item
@@ -80,3 +79,11 @@ generic,<player> died,死者死了
 generic,<player> died because of <player/mob>,死者死于击杀者
 unsendable,<player> was roasted in dragon breath,死者被龙之吐息所烤焦
 unsendable,<player> was roasted in dragon breath by <player/mob>,死者被击杀者的龙息烤熟了
+unused,<player> was doomed to fall,死者注定要摔死
+unused,<player> was doomed to fall by <player/mob>,死者因为击杀者注定要摔死
+unused,<player> was doomed to fall by <player/mob> using <item>,死者因为击杀者使用了[物品]注定要摔死
+unused,<player> fell too far and was finished by <player/mob>,死者摔伤得太重并被击杀者完结了生命
+unused,<player> fell too far and was finished by <player/mob> using <item>,死者摔伤得太重并被击杀者用[物品]完结了生命
+unused,<player> was stung to death by <player/mob>,死者被击杀者蛰死了
+unused,<player> went off with a bang whilst fighting <player/mob>,死者在与击杀者战斗时随着一声巨响中消失了
+unused,<player> was killed by even more magic,死者被更多的魔法杀死了
