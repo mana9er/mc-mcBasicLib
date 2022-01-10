@@ -1,0 +1,81 @@
+damage_source,deathmsg
+arrow,<player> was shot by <player/mob>
+arrow,<player> was shot by <player/mob> using <item>
+snowballs,<player> was pummeled by <player/mob>
+snowballs,<player> was pummeled by <player/mob> using <item>
+cactus,<player> was pricked to death
+cactus,<player> walked into a cactus whilst trying to escape <player/mob>
+drowning,<player> drowned
+drowning,<player> drowned whilst trying to escape <player/mob>
+elytra,<player> experienced kinetic energy
+elytra,<player> experienced kinetic energy whilst trying to escape <player/mob>
+explosions,<player> blew up
+explosions,<player> was blown up by <player/mob>
+explosions,<player> was blown up by <player/mob> using <item>
+explosions,<player> was killed by [Intentional Game Design]
+falling,<player> hit the ground too hard
+falling,<player> hit the ground too hard whilst trying to escape <player/mob>
+falling,<player> fell from a high place
+falling,<player> fell off a ladder
+falling,<player> fell off some vines
+falling,<player> fell off some weeping vines
+falling,<player> fell off some twisting vines
+falling,<player> fell off scaffolding
+falling,<player> fell while climbing
+falling,death.fell.accident.water
+falling,<player> was impaled on a stalagmite
+falling,<player> was impaled on a stalagmite whilst fighting <player/mob>
+falling_blocks,<player> was squashed by a falling anvil
+falling_blocks,<player> was squashed by a falling anvil whilst fighting <player/mob>
+falling_blocks,<player> was squashed by a falling block
+falling_blocks,<player> was squashed by a falling block whilst fighting <player/mob>
+falling_blocks,<player> was skewered by a falling stalactite
+falling_blocks,<player> was skewered by a falling stalactite whilst fighting <player/mob>
+fire,<player> went up in flames
+fire,<player> walked into fire whilst fighting <player/mob>
+fire,<player> burned to death
+fire,<player> was burnt to a crisp whilst fighting <player/mob>
+firework_rockets,<player> went off with a bang
+firework_rockets,<player> went off with a bang due to a firework fired from <item> by <player/mob>
+lava,<player> tried to swim in lava
+lava,<player> tried to swim in lava to escape <player/mob>
+lightning,<player> was struck by lightning
+lightning,<player> was struck by lightning whilst fighting <player/mob>
+magma_block,<player> discovered the floor was lava
+magma_block,<player> walked into danger zone due to <player/mob>
+magic,<player> was killed by magic
+magic,<player> was killed by magic whilst trying to escape <player/mob>
+magic,<player> was killed by <player/mob> using magic
+magic,<player> was killed by <player/mob> using <item>
+powder_snow,<player> froze to death
+powder_snow,<player> was frozen to death by <player/mob>
+players_and_mobs,<player> was slain by <player/mob>
+players_and_mobs,<player> was slain by <player/mob> using <item>
+players_and_mobs,<player> was fireballed by <player/mob>
+players_and_mobs,<player> was fireballed by <player/mob> using <item>
+players_and_mobs,<player> was stung to death
+players_and_mobs,death.attack.sting.item
+players_and_mobs,<player> was shot by a skull from <player/mob>
+players_and_mobs,death.attack.witherSkull.item
+starving,<player> starved to death
+starving,<player> starved to death whilst fighting <player/mob>
+suffocation,<player> suffocated in a wall
+suffocation,<player> suffocated in a wall whilst fighting <player/mob>
+suffocation,<player> was squished too much
+suffocation,<player> was squashed by <player/mob>
+sweet_berry_bushes,<player> was poked to death by a sweet berry bush
+sweet_berry_bushes,<player> was poked to death by a sweet berry bush whilst trying to escape <player/mob>
+thorns_enchantment,<player> was killed trying to hurt <player/mob>
+thorns_enchantment,<player> was killed by <item> trying to hurt <player/mob>
+trident,<player> was impaled by <player/mob>
+trident,<player> was impaled by <player/mob> with <item>
+void,<player> fell out of the world
+void,<player> didn't want to live in the same world as <player/mob>
+wither_effect,<player> withered away
+wither_effect,<player> withered away whilst fighting <player/mob>
+drying_out,<player> died from dehydration
+drying_out,<player> died from dehydration whilst trying to escape <player/mob>
+generic,<player> died
+generic,<player> died because of <player/mob>
+unsendable,<player> was roasted in dragon breath
+unsendable,<player> was roasted in dragon breath by <player/mob>
