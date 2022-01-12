@@ -66,6 +66,8 @@ class McBasicLib(QtCore.QObject):
         if isinstance(player, Player) and player.is_console():
             self.logger.direct_output(json_str)
         else:
+            if len(self.online_player_list) == 0:
+                return  # do not execute when there's nobody online
             if isinstance(player, Player):
                 player_name = player.name
             else:
@@ -76,6 +78,8 @@ class McBasicLib(QtCore.QObject):
         if isinstance(player, Player) and player.is_console():
             self.logger.direct_output(text)
         else:
+            if len(self.online_player_list) == 0:
+                return  # do not execute when there's nobody online
             tell_obj = {
                 'text': text,
                 'color': color,
