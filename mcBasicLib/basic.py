@@ -22,8 +22,13 @@ class McBasicLib(QtCore.QObject):
         self.core = core
         self.logger = logger
         Player.logger = logger
+        self.online_player_list = set()
         core.sig_command.connect(self.on_command)
         core.sig_server_output.connect(self.on_server_output)
+        core.on_server_start.connect(self.on_server_start)
+        core.on_server_stop.connect(self.on_server_stop)
+        self.sig_login.connect(self.on_player_login)
+        self.sig_logout.connect(self.on_player_logout)
 
     @QtCore.pyqtSlot(str)
     def on_command(self, cmd):
@@ -33,7 +38,7 @@ class McBasicLib(QtCore.QObject):
     def on_server_output(self, lines):
         for line in lines:
             # detect player input
-            match_obj = re.match(r'.*?<(\w+?)> (.*)', line)
+            match_obj = re.match(r'[^<>]*?\[Server thread/INFO\].*?:\s*<(\w+?)> (.*)', line)
             if match_obj:  # some players said something
                 player = match_obj.group(1)
                 text = match_obj.group(2)
@@ -81,3 +86,28 @@ class McBasicLib(QtCore.QObject):
             else:
                 player_name = player
             self.core.write_server('/tellraw {} {}'.format(player_name, json.dumps(tell_obj)))
+
+    def get_online_player_list(self):
+        return list(self.online_player_list)
+
+    @QtCore.pyqtSlot(object)
+    def on_player_login(self, player):
+        # `player` here is an object
+        player = player.name
+        self.online_player_list.add(player)
+        self.logger.debug('Online player list changed to: {}'.format(self.online_player_list))
+    
+    @QtCore.pyqtSlot(object)
+    def on_player_logout(self, player):
+        # `player` here is an object
+        player = player.name
+        self.online_player_list.remove(player)
+        self.logger.debug('Online player list changed to: {}'.format(self.online_player_list))
+
+    @QtCore.pyqtSlot()
+    def on_server_start(self):
+        self.online_player_list.clear()
+    
+    @QtCore.pyqtSlot()
+    def on_server_stop(self):
+        self.online_player_list.clear()

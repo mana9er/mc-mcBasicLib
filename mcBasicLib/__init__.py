@@ -25,4 +25,5 @@ def load(logger, core):
     exports.say = lib_inst.say
     exports.tellraw = lib_inst.tellraw
     exports.tell = lib_inst.tell
+    exports.get_online_player_list = lib_inst.get_online_player_list
     return exports
