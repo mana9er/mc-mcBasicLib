@@ -25,8 +25,8 @@ class McBasicLib(QtCore.QObject):
         self.online_player_list = set()
         core.sig_command.connect(self.on_command)
         core.sig_server_output.connect(self.on_server_output)
-        core.on_server_start.connect(self.on_server_start)
-        core.on_server_stop.connect(self.on_server_stop)
+        core.sig_server_start.connect(self.on_server_start)
+        core.sig_server_stop.connect(self.on_server_stop)
         self.sig_login.connect(self.on_player_login)
         self.sig_logout.connect(self.on_player_logout)
 
