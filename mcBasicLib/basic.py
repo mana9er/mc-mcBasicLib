@@ -68,11 +68,8 @@ class McBasicLib(QtCore.QObject):
         else:
             if len(self.online_player_list) == 0:
                 return  # do not execute when there's nobody online
-            if isinstance(player, Player):
-                player_name = player.name
-            else:
-                player_name = player
-            self.core.write_server('/tellraw {} {}'.format(player_name, json_str))
+            player = str(player)
+            self.core.write_server('/tellraw {} {}'.format(player, json_str))
 
     def tell(self, player, text, color='yellow', bold=False):
         if isinstance(player, Player) and player.is_console():
@@ -85,11 +82,8 @@ class McBasicLib(QtCore.QObject):
                 'color': color,
                 'bold': bold
             }
-            if isinstance(player, Player):
-                player_name = player.name
-            else:
-                player_name = player
-            self.core.write_server('/tellraw {} {}'.format(player_name, json.dumps(tell_obj)))
+            player = str(player)
+            self.core.write_server('/tellraw {} {}'.format(player, json.dumps(tell_obj)))
 
     def get_online_player_list(self):
         return list(self.online_player_list)

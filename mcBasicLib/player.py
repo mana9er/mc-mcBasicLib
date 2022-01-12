@@ -5,6 +5,9 @@ class Player:
     
     def __init__(self, name):
         self.name = name
+    
+    def __str__(self):
+        return self.name
 
     def is_console(self):
         return False
