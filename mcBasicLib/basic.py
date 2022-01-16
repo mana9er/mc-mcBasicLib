@@ -1,6 +1,7 @@
 from PyQt5 import QtCore
 from .player import Player, GhostingPlayer
 from .advancement import Advancement, AdvancementInfo
+from .death import DeathMsg, DeathMsgInfo
 import re
 import json
 
@@ -16,7 +17,7 @@ class McBasicLib(QtCore.QObject):
     sig_input = QtCore.pyqtSignal(tuple)            # (Player, str) tuple, the player object and what he said.
     sig_login = QtCore.pyqtSignal(object)           # the player who just logged-in.
     sig_logout = QtCore.pyqtSignal(object)          # the player who just logged-out.
-    sig_death = QtCore.pyqtSignal(object)           # TODO: detect the death of player.
+    sig_death = QtCore.pyqtSignal(object)           # a DeathMsg object.
     sig_advancement = QtCore.pyqtSignal(object)     # an Advancement object.
     
     def __init__(self, logger, core):
@@ -25,6 +26,7 @@ class McBasicLib(QtCore.QObject):
         self.logger = logger
         Player.logger = logger
         self.online_player_list = set()
+        self.deathmsg_re_patterns = self._gen_re_patterns_for_death_msg()
         core.sig_command.connect(self.on_command)
         core.sig_server_output.connect(self.on_server_output)
         core.sig_server_start.connect(self.on_server_start)
@@ -81,6 +83,46 @@ class McBasicLib(QtCore.QObject):
                 advc_obj = Advancement(player, advc_id, i)
                 self.sig_advancement.emit(advc_obj)
                 return
+        # detect death info
+        death_patterns = DeathMsgInfo.death_patterns
+        for pattern in death_patterns:
+            # use substring match for better performance
+            if pattern in line:
+                self._parse_death_info(line)  # do further parse in this function
+                return
+
+    def _parse_death_msg(self, line):
+        for re_pattern in self.deathmsg_re_patterns:
+            match_obj = re.match(re_pattern['pattern'], line)
+            if match_obj:
+                death_info = {}
+                for i, param in enumerate(re_pattern['params']):
+                    extracted = match_obj.group(i + 1)
+                    death_info[param] = extracted
+                death_obj = DeathMsg(re_pattern['id'], death_info)
+                self.sig_death.emit(death_obj)
+                return
+
+    def _gen_re_patterns_for_death_msg(self):
+        en_formats = DeathMsgInfo.death_msg_formats['en']
+        re_patterns = []
+        for i, text in enumerate(en_formats):
+            pattern = r'[^<>]*?\[Server thread/INFO\].*?:\s*' + text.format(
+                victim='(.+?)',
+                murderer='(.+?)',
+                item='(.+?)'
+            )
+            params = []
+            parts = text.split('{')
+            for part in parts[1:]:
+                param = part.split('}')[0]
+                params.append(param)
+            re_patterns.append({
+                'id': i,
+                'pattern': pattern,
+                'params': params,
+            })
+        return re_patterns
 
     def say(self, text):
         self.core.write_server('/say {}'.format(text))
