@@ -1,5 +1,6 @@
 from PyQt5 import QtCore
 from .player import Player, GhostingPlayer
+from .advancement import Advancement, AdvancementInfo
 import re
 import json
 
@@ -12,10 +13,11 @@ class McBasicLib(QtCore.QObject):
     """
 
     # Signals
-    sig_input = QtCore.pyqtSignal(tuple)    # (Player, str) tuple, the player object and what he said.
-    sig_login = QtCore.pyqtSignal(object)   # the player who just logged-in.
-    sig_logout = QtCore.pyqtSignal(object)  # the player who just logged-out.
-    sig_death = QtCore.pyqtSignal(tuple)    # TODO: detect the death of player.
+    sig_input = QtCore.pyqtSignal(tuple)            # (Player, str) tuple, the player object and what he said.
+    sig_login = QtCore.pyqtSignal(object)           # the player who just logged-in.
+    sig_logout = QtCore.pyqtSignal(object)          # the player who just logged-out.
+    sig_death = QtCore.pyqtSignal(object)           # TODO: detect the death of player.
+    sig_advancement = QtCore.pyqtSignal(object)     # an Advancement object.
     
     def __init__(self, logger, core):
         super().__init__(core)
@@ -37,27 +39,44 @@ class McBasicLib(QtCore.QObject):
     @QtCore.pyqtSlot(list)
     def on_server_output(self, lines):
         for line in lines:
-            # detect player input
-            match_obj = re.match(r'[^<>]*?\[Server thread/INFO\].*?:\s*<(\w+?)> (.*)', line)
-            if match_obj:  # some players said something
+            self._parse_output(line)
+
+    def _parse_output(self, line):
+        # detect player input
+        match_obj = re.match(r'[^<>]*?\[Server thread/INFO\].*?:\s*<(\w+?)> (.*)', line)
+        if match_obj:  # some players said something
+            player = match_obj.group(1)
+            text = match_obj.group(2)
+            self.logger.debug('Player {} said: {}'.format(player, text))
+            self.sig_input.emit((Player(player), text))
+            return
+        # detect login / logout
+        # don't need to exclude player input (already handled)
+        match_obj = re.match(r'[^<>]*?\[Server thread/INFO\].*?:\s*(\w+) (joined|left) the game$', line)
+        if match_obj:  # some player joined the game
+            player = match_obj.group(1)
+            if match_obj.group(2) == 'joined':
+                self.logger.debug('Player {} joined the game'.format(player))
+                self.sig_login.emit(Player(player))
+            elif match_obj.group(2) == 'left':
+                self.logger.debug('Player {} left the game'.format(player))
+                self.sig_logout.emit(Player(player))
+            return
+        # detect advancement
+        # actually we have 3 different types: advancement, challenge, and goal.
+        advc_patterns = [
+            r'[^<>]*?\[Server thread/INFO\].*?:\s*(\w+) has made the advancement \[(.+)\]$',
+            r'[^<>]*?\[Server thread/INFO\].*?:\s*(\w+) has completed the challenge \[(.+)\]$',
+            r'[^<>]*?\[Server thread/INFO\].*?:\s*(\w+) has reached the goal \[(.+)\]$',
+        ]
+        for i, pattern in enumerate(advc_patterns):
+            match_obj = re.match(pattern, line)
+            if match_obj:
                 player = match_obj.group(1)
-                text = match_obj.group(2)
-                self.logger.debug('Player {} said: {}'.format(player, text))
-                self.sig_input.emit((Player(player), text))
+                advc_name = match_obj.group(2)
+                advc_obj = Advancement(player, AdvancementInfo.get_id_by_name(advc_name), i)
+                self.sig_advancement.emit(advc_obj)
                 return
-            # detect login / logout
-            # don't need to exclude player input (already handled)
-            match_obj = re.match(r'[^<>]*?\[Server thread/INFO\].*?:\s*(\w+)\s*(joined|left) the game$', line)
-            if match_obj:  # some player joined the game
-                player = match_obj.group(1)
-                if match_obj.group(2) == 'joined':
-                    self.logger.debug('Player {} joined the game'.format(player))
-                    self.sig_login.emit(Player(player))
-                elif match_obj.group(2) == 'left':
-                    self.logger.debug('Player {} left the game'.format(player))
-                    self.sig_logout.emit(Player(player))
-                return
-            
 
     def say(self, text):
         self.core.write_server('/say {}'.format(text))
