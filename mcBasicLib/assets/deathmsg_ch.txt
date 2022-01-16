@@ -1,2 +1,2 @@
-{victim}±»{murderer}ÉäÉ±
-{victim}±»{murderer}ÓÃ{item}ÉäÉ±
+{victim}è¢«{murderer}å°„æ€
+{victim}è¢«{murderer}ç”¨{item}å°„æ€
