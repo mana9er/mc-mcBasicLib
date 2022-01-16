@@ -1,14 +1,14 @@
 import os
 
+ASSETS_FILENAME_PREFIX = 'advancement_'
+ADVANCEMENT_TYPE_N = 3
 class AdvancementInfo:
-    ASSETS_FILENAME_PREFIX = 'advancement_'
-    ADVANCEMENT_TYPE_N = 3
     advancement_names = {}
     advancement_formats = {}
     
     @classmethod
-    def init(cls):
-        assets_dir = os.path.join(os.path.dirname(__file__), 'assets')
+    def init(cls, plugin_dir):
+        assets_dir = os.path.join(plugin_dir, 'assets')
         for asset_file in os.listdir(assets_dir):
             if os.path.isfile(os.path.join(assets_dir, asset_file)):
                 if asset_file.startswith(ASSETS_FILENAME_PREFIX):
@@ -20,6 +20,13 @@ class AdvancementInfo:
                         cls.advancement_names[lang] = names
                         cls.advancement_formats[lang] = formats
     
+    @classmethod
+    def get_id_by_name(cls, name):
+        for i, v in enumerate(cls.advancement_names['en']):
+            if v == name:
+                return i
+        return None
+
 class Advancement:
     def __init__(self, player, advancement_id, advancement_type):
         self.player = player
@@ -30,7 +37,7 @@ class Advancement:
         if not (lang in AdvancementInfo.advancement_names):
             lang = 'en'
         name = AdvancementInfo.advancement_names[lang][self.advancement_id]
-        return AdvancementInfo.advancement_formats[self.advancement_type].format(player=str(self.player), name=name)
+        return AdvancementInfo.advancement_formats[lang][self.advancement_type].format(player=str(self.player), name=name)
     
     def get_player(self):
         return self.player

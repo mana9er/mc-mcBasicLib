@@ -74,7 +74,11 @@ class McBasicLib(QtCore.QObject):
             if match_obj:
                 player = match_obj.group(1)
                 advc_name = match_obj.group(2)
-                advc_obj = Advancement(player, AdvancementInfo.get_id_by_name(advc_name), i)
+                advc_id = AdvancementInfo.get_id_by_name(advc_name)
+                if advc_id is None:
+                    self.logger.error('unrecognized advancement name: ' + advc_name)
+                    return
+                advc_obj = Advancement(player, advc_id, i)
                 self.sig_advancement.emit(advc_obj)
                 return
 
