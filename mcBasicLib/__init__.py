@@ -3,6 +3,7 @@ from PyQt5 import QtCore
 from .basic import McBasicLib
 from .player import Player, GhostingPlayer
 from .advancement import AdvancementInfo
+from .death import DeathMsgInfo
 
 dependencies = []
 
@@ -32,4 +33,5 @@ def load(logger, core):
     exports.get_online_player_list = lib_inst.get_online_player_list
     plugin_dir = os.path.join(core.root_dir, 'mcBasicLib')
     AdvancementInfo.init(plugin_dir)
+    DeathMsgInfo.init(plugin_dir)
     return exports
