@@ -5,6 +5,7 @@ ADVANCEMENT_TYPE_N = 3
 class AdvancementInfo:
     advancement_names = {}
     advancement_formats = {}
+    id_by_name = {}
     
     @classmethod
     def init(cls, plugin_dir):
@@ -19,13 +20,11 @@ class AdvancementInfo:
                         formats = [line.strip() for line in lines[:ADVANCEMENT_TYPE_N]]
                         cls.advancement_names[lang] = names
                         cls.advancement_formats[lang] = formats
+        cls.id_by_name = {v: i for i, v in enumerate(cls.advancement_names['en'])}
     
     @classmethod
     def get_id_by_name(cls, name):
-        for i, v in enumerate(cls.advancement_names['en']):
-            if v == name:
-                return i
-        return None
+        return cls.id_by_name.get(name, None)
 
 class Advancement:
     def __init__(self, player, advancement_id, advancement_type):
