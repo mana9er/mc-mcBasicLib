@@ -1,0 +1,2 @@
+{victim} was shot by {murderer}
+{victim} was shot by {murderer} using {item}

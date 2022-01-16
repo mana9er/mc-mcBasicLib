@@ -1,0 +1,93 @@
+{player} has made the advancement [{name}]
+{player} has completed the challenge [{name}]
+{player} has reached the goal [{name}]
+Stone Age
+Getting an Upgrade
+Acquire Hardware
+Suit Up
+Hot Stuff
+Isn't It Iron Pick
+Not Today, Thank You
+Ice Bucket Challenge
+Diamonds!
+We Need to Go Deeper
+Cover Me With Diamonds
+Enchanter
+Zombie Doctor
+Eye Spy
+The End?
+Return to Sender
+Those Were the Days
+Hidden in the Depths
+Subspace Bubble
+A Terrible Fortress
+Who is Cutting Onions?
+Oh Shiny
+This Boat Has Legs
+Uneasy Alliance
+War Pigs
+Country Lode, Take Me Home
+Cover Me in Debris
+Spooky Scary Skeleton
+Into Fire
+Not Quite "Nine" Lives
+Feels like home
+Hot Tourist Destinations
+Withering Heights
+Local Brewery
+Bring Home the Beacon
+A Furious Cocktail
+Beaconator
+How Did We Get Here?
+Free the End
+The Next Generation
+Remote Getaway
+The End...Again...
+You Need a Mint
+The City at the End of the Game
+Sky's the Limit
+Great View From Up Here
+Voluntary Exile
+Is It a Bird?
+Monster Hunter
+What a Deal!
+Sticky Situation
+Ol' Betsy
+Surge Protector
+Caves & Cliffs
+Sweet Dreams
+Hero of the Village
+Is It a Balloon?
+A Throwaway Joke
+Take Aim
+Monsters Hunted
+Postmortal
+Hired Help
+Star Trader
+Two Birds, One Arrow
+Who's the Pillager Now?
+Arbalistic
+Adventuring Time
+Sound of Music
+Light as a Rabbit
+Is It a Plane?
+Very Very Frightening
+Sniper Duel
+Bullseye
+Bee Our Guest
+The Parrots and the Bats
+Whatever Floats Your Goat!
+Best Friends Forever
+Glow and Behold!
+Fishy Business
+Total Beelocation
+A Seedy Place
+Wax On
+Two by Two
+A Complete Catalogue
+Tactical Fishing
+A Balanced Diet
+Serious Dedication
+Wax Off
+The Cutest Predator
+The Healing Power of Friendship!
