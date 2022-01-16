@@ -88,7 +88,7 @@ class McBasicLib(QtCore.QObject):
         for pattern in death_patterns:
             # use substring match for better performance
             if pattern in line:
-                self._parse_death_info(line)  # do further parse in this function
+                self._parse_death_msg(line)  # do further parse in this function
                 return
 
     def _parse_death_msg(self, line):
