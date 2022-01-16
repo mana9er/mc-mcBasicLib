@@ -1,3 +1,4 @@
+import os
 from PyQt5 import QtCore
 from .basic import McBasicLib
 from .player import Player, GhostingPlayer
