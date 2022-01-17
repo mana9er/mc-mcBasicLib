@@ -105,16 +105,18 @@ class McBasicLib(QtCore.QObject):
 
     def _gen_re_patterns_for_death_msg(self):
         en_formats = DeathMsgInfo.death_msg_formats['en']
+        # {item} will contain '[' and ']' so it cannot be matched by [a-zA-Z0-9_ ]
+        re_catchers = ['(\w+)', '([a-zA-Z0-9_ ]+?)', '(.+?)']
         re_patterns = []
         for i, text in enumerate(en_formats):
             pattern = [r'[^<>]*?\[Server thread/INFO\].*?:\s*']
             params = []
             parts = text.split('{')
             pattern.append(re.escape(parts[0]))
-            for part in parts[1:]:
+            for j, part in enumerate(parts[1:]):
                 param = part.split('}')[0]
                 params.append(param)
-                pattern.append('(.+?)')
+                pattern.append(re_catchers[j])
                 pattern.append(re.escape(part.split('}')[1]))
             pattern.append('$')
             pattern = ''.join(pattern)
