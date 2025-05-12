@@ -1,6 +1,7 @@
 {player} has made the advancement [{name}]
 {player} has completed the challenge [{name}]
 {player} has reached the goal [{name}]
+Minecraft
 Stone Age
 Getting an Upgrade
 Acquire Hardware
@@ -11,26 +12,27 @@ Not Today, Thank You
 Ice Bucket Challenge
 Diamonds!
 We Need to Go Deeper
-Cover Me with Diamonds
+Cover Me With Diamonds
 Enchanter
 Zombie Doctor
 Eye Spy
 The End?
-Return to Sender
-Those Were the Days
-Hidden in the Depths
-Subspace Bubble
-A Terrible Fortress
-Who is Cutting Onions?
+Nether
 Oh Shiny
+Subspace Bubble
+Those Were the Days
+A Terrible Fortress
+Hidden in the Depths
+Who is Cutting Onions?
+Return to Sender
 This Boat Has Legs
-Uneasy Alliance
 War Pigs
-Country Lode, Take Me Home
-Cover Me in Debris
 Spooky Scary Skeleton
 Into Fire
+Cover Me in Debris
 Not Quite "Nine" Lives
+Uneasy Alliance
+Country Lode, Take Me Home
 Feels like home
 Hot Tourist Destinations
 Withering Heights
@@ -39,6 +41,7 @@ Bring Home the Beacon
 A Furious Cocktail
 Beaconator
 How Did We Get Here?
+The End
 Free the End
 The Next Generation
 Remote Getaway
@@ -47,47 +50,76 @@ You Need a Mint
 The City at the End of the Game
 Sky's the Limit
 Great View From Up Here
-Voluntary Exile
-Is It a Bird?
-Monster Hunter
-What a Deal!
-Sticky Situation
-Ol' Betsy
-Surge Protector
+Adventure
+Sneak 100
+Crafters Crafting Crafters
 Caves & Cliffs
+Sticky Situation
+Monster Hunter
+Surge Protector
+Minecraft: Trial(s) Edition
+Ol' Betsy
+The Power of Books
+Isn't It Scute?
+Respecting the Remnants
 Sweet Dreams
-Hero of the Village
-Is It a Balloon?
-A Throwaway Joke
-Take Aim
+Is It a Bird?
+What a Deal!
+Crafting a New Look
+Voluntary Exile
 Monsters Hunted
+It Spreads
+Take Aim
+A Throwaway Joke
 Postmortal
-Hired Help
-Star Trader
+Blowback
+Lighten Up
+Over-Overkill
+Under Lock and Key
+Who Needs Rockets?
+Arbalistic
 Two Birds, One Arrow
 Who's the Pillager Now?
-Arbalistic
+Careful Restoration
 Adventuring Time
 Sound of Music
 Light as a Rabbit
-Is It a Plane?
-Very Very Frightening
-Sniper Duel
+Is It a Balloon?
+Hired Help
+Star Trader
+Smithing with Style
+Hero of the Village
 Bullseye
-Bee Our Guest
+Sniper Duel
+Very Very Frightening
+Is It a Plane?
+Revaulting
+Husbandry
+You've Got a Friend in Me
 The Parrots and the Bats
-Whatever Floats Your Goat!
-Best Friends Forever
-Glow and Behold!
 Fishy Business
-Total Beelocation
+Glow and Behold!
+Smells Interesting
 A Seedy Place
-Wax On
+Whatever Floats Your Goat!
+Bee Our Guest
+Total Beelocation
+Bukkit Bukkit
+Best Friends Forever
+Birthday Song
 Two by Two
-A Complete Catalogue
 Tactical Fishing
+Little Sniffs
 A Balanced Diet
 Serious Dedication
-Wax Off
+Wax On
+When the Squad Hops into Town
+Good as New
+Shear Brilliance
+A Complete Catalogue
+The Whole Pack
 The Cutest Predator
+Planting the Past
+Wax Off
+With Our Powers Combined!
 The Healing Power of Friendship!
