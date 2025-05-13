@@ -1,0 +1,101 @@
+伤害类型          , 死亡消息                                                           , deathmsg_en
+player_attack     , {victim} 被 {murderer} 杀死了                                      , {victim} was slain by {murderer}
+player_attack     , {victim} 被 {murderer} 用 {item} 杀死了                            , {victim} was slain by {murderer} using {item}
+mob_attack        , {victim} 被 {murderer} 杀死了                                      , {victim} was slain by {murderer}
+mob_attack        , {victim} 被 {murderer} 用 {item} 杀死了                            , {victim} was slain by {murderer} using {item}
+sting             , {victim} 被蛰死了                                                  , {victim} was stung to death
+sting             , {victim} 被 {murderer} 用 {item} 蛰死了                            , {victim} was stung to death by {murderer} using {item}
+sting             , {victim} 被 {murderer} 蛰死了                                      , {victim} was stung to death by {murderer}
+arrow             , {victim} 被 {murderer} 射杀                                        , {victim} was shot by {murderer}
+arrow             , {victim} 被 {murderer} 用 {item} 射杀                              , {victim} was shot by {murderer} using {item}
+trident           , {victim} 被 {murderer} 刺穿了                                      , {victim} was impaled by {murderer}
+trident           , {victim} 被 {murderer} 用 {item} 刺穿了                            , {victim} was impaled by {murderer} with {item}
+fireball          , {victim} 被 {murderer} 用火球烧死了                                , {victim} was fireballed by {murderer}
+fireball          , {victim} 被 {murderer} 用 {item} 发射的火球烧死了                  , {victim} was fireballed by {murderer} using {item}
+thrown            , {victim} 被 {murderer} 给砸死了                                    , {victim} was pummeled by {murderer}
+thrown            , {victim} 被 {murderer} 用 {item} 给砸死了                          , {victim} was pummeled by {murderer} using {item}
+fireworks         , {victim} 随着一声巨响消失了                                        , {victim} went off with a bang
+fireworks         , {victim} 随着 {murderer} 用 {item} 发射的烟花发出的巨响消失了      , {victim} went off with a bang due to a firework fired from {item} by {murderer}
+fireworks         , {victim} 在与 {murderer} 战斗时随着一声巨响消失了                  , {victim} went off with a bang while fighting {murderer}
+wither_skull      , {victim} 被 {murderer} 发射的头颅射杀                              , {victim} was shot by a skull from {murderer}
+wither_skull      , {victim} 被 {murderer} 用 {item} 发射的头颅射杀                    , {victim} was shot by a skull from {murderer} using {item}
+thorns            , {victim} 在试图伤害 {murderer} 时被杀                              , {victim} was killed while trying to hurt {murderer}
+thorns            , {victim} 在试图伤害 {murderer} 时被 {item} 杀死                    , {victim} was killed by {item} while trying to hurt {murderer}
+indirect_magic    , {victim} 被 {murderer} 使用的魔法杀死了                            , {victim} was killed by {murderer} using magic
+indirect_magic    , {victim} 被 {murderer} 用 {item} 杀死了                            , {victim} was killed by {murderer} using {item}
+sonic_boom        , {victim} 被一道音波尖啸抹除了                                      , {victim} was obliterated by a sonically-charged shriek
+sonic_boom        , {victim} 在试图逃离持有 {item} 的 {murderer} 时被一道音波尖啸抹除了, {victim} was obliterated by a sonically-charged shriek while trying to escape {murderer} wielding {item}
+sonic_boom        , {victim} 在试图逃离 {murderer} 时被一道音波尖啸抹除了              , {victim} was obliterated by a sonically-charged shriek while trying to escape {murderer}
+dragon_breath     , {victim} 被龙息烤熟了                                              , {victim} was roasted in dragon's breath
+dragon_breath     , {victim} 被 {murderer} 的龙息烤熟了                                , {victim} was roasted in dragon's breath by {murderer}
+mace_smash        , {victim} 被 {murderer} 一锤毙命                                    , {victim} was smashed by {murderer}
+mace_smash        , {victim} 被 {murderer} 用 {item} 一锤毙命                          , {victim} was smashed by {murderer} with {item}
+on_fire           , {victim} 被烧死了                                                  , {victim} burned to death
+on_fire           , {victim} 在与持有 {item} 的 {murderer} 战斗时被烤得酥脆            , {victim} was burned to a crisp while fighting {murderer} wielding {item}
+on_fire           , {victim} 在与 {murderer} 战斗时被烤得酥脆                          , {victim} was burned to a crisp while fighting {murderer}
+magic             , {victim} 被魔法杀死了                                              , {victim} was killed by magic
+magic             , {victim} 在试图逃离 {murderer} 时被魔法杀死了                      , {victim} was killed by magic while trying to escape {murderer}
+wither            , {victim} 凋零了                                                    , {victim} withered away
+wither            , {victim} 在与 {murderer} 战斗时凋零了                              , {victim} withered away while fighting {murderer}
+starve            , {victim} 饿死了                                                    , {victim} starved to death
+starve            , {victim} 在与 {murderer} 战斗时饿死了                              , {victim} starved to death while fighting {murderer}
+cactus            , {victim} 被戳死了                                                  , {victim} was pricked to death
+cactus            , {victim} 在试图逃离 {murderer} 时撞上了仙人掌                      , {victim} walked into a cactus while trying to escape {murderer}
+in_fire           , {victim} 浴火焚身                                                  , {victim} went up in flames
+in_fire           , {victim} 在与 {murderer} 战斗时不慎走入了火中                      , {victim} walked into fire while fighting {murderer}
+lava              , {victim} 试图在熔岩里游泳                                          , {victim} tried to swim in lava
+lava              , {victim} 在逃离 {murderer} 时试图在熔岩里游泳                      , {victim} tried to swim in lava to escape {murderer}
+hot_floor         , {victim} 发现了地板是熔岩做的                                      , {victim} discovered the floor was lava
+hot_floor         , {victim} 因 {murderer} 而步入危险之地                              , {victim} walked into the danger zone due to {murderer}
+sweet_berry_bush  , {victim} 被甜浆果丛刺死了                                          , {victim} was poked to death by a sweet berry bush
+sweet_berry_bush  , {victim} 在试图逃离 {murderer} 时被甜浆果丛刺死了                  , {victim} was poked to death by a sweet berry bush while trying to escape {murderer}
+in_wall           , {victim} 在墙里窒息而亡                                            , {victim} suffocated in a wall
+in_wall           , {victim} 在与 {murderer} 战斗时在墙里窒息而亡                      , {victim} suffocated in a wall while fighting {murderer}
+drown             , {victim} 淹死了                                                    , {victim} drowned
+drown             , {victim} 在试图逃离 {murderer} 时淹死了                            , {victim} drowned while trying to escape {murderer}
+dryout            , {victim} 因脱水而死                                                , {victim} died from dehydration
+dryout            , {victim} 在试图逃离 {murderer} 时因脱水而死                        , {victim} died from dehydration while trying to escape {murderer}
+freeze            , {victim} 被冻死了                                                  , {victim} froze to death
+freeze            , {victim} 被 {murderer} 冻死了                                      , {victim} was frozen to death by {murderer}
+cramming          , {victim} 因被过度挤压而死                                          , {victim} was squished too much
+cramming          , {victim} 被 {murderer} 挤扁了                                      , {victim} was squashed by {murderer}
+lightning_bolt    , {victim} 被闪电击中                                                , {victim} was struck by lightning
+lightning_bolt    , {victim} 在与 {murderer} 战斗时被闪电击中                          , {victim} was struck by lightning while fighting {murderer}
+outside_border    , {victim} 脱离了这个世界                                            , {victim} left the confines of this world
+outside_border    , {victim} 在与 {murderer} 战斗时脱离了这个世界                      , {victim} left the confines of this world while fighting {murderer}
+out_of_world      , {victim} 掉出了这个世界                                            , {victim} fell out of the world
+out_of_world      , {victim} 与 {murderer} 不共戴天                                    , {victim} didn't want to live in the same world as {murderer}
+fall              , {victim} 落地过猛                                                  , {victim} hit the ground too hard
+fall              , {victim} 在试图逃离 {murderer} 时落地过猛                          , {victim} hit the ground too hard while trying to escape {murderer}
+stalagmite        , {victim} 被石笋刺穿了                                              , {victim} was impaled on a stalagmite
+stalagmite        , {victim} 在与 {murderer} 战斗时被石笋刺穿了                        , {victim} was impaled on a stalagmite while fighting {murderer}
+falling_anvil     , {victim} 被下落的铁砧压扁了                                        , {victim} was squashed by a falling anvil
+falling_anvil     , {victim} 在与 {murderer} 战斗时被下落的铁砧压扁了                  , {victim} was squashed by a falling anvil while fighting {murderer}
+falling_stalactite, {victim} 被下落的钟乳石刺穿了                                      , {victim} was skewered by a falling stalactite
+falling_stalactite, {victim} 在与 {murderer} 战斗时被下落的钟乳石刺穿了                , {victim} was skewered by a falling stalactite while fighting {murderer}
+falling_block     , {victim} 被下落的方块压扁了                                        , {victim} was squashed by a falling block
+falling_block     , {victim} 在与 {murderer} 战斗时被下落的方块压扁了                  , {victim} was squashed by a falling block while fighting {murderer}
+fly_into_wall     , {victim} 感受到了动能                                              , {victim} experienced kinetic energy
+fly_into_wall     , {victim} 在试图逃离 {murderer} 时感受到了动能                      , {victim} experienced kinetic energy while trying to escape {murderer}
+fall              , {victim} 从高处摔了下来                                            , {victim} fell from a high place
+fall              , {victim} 从梯子上摔了下来                                          , {victim} fell off a ladder
+fall              , {victim} 从脚手架上摔了下来                                        , {victim} fell off scaffolding
+fall              , {victim} 从藤蔓上摔了下来                                          , {victim} fell off some vines
+fall              , {victim} 从垂泪藤上摔了下来                                        , {victim} fell off some weeping vines
+fall              , {victim} 从缠怨藤上摔了下来                                        , {victim} fell off some twisting vines
+fall              , {victim} 在攀爬时摔了下来                                          , {victim} fell while climbing
+fall              , death.fell.accident.water                                          , death.fell.accident.water
+fall              , {victim} 注定要摔死                                                , {victim} was doomed to fall
+fall              , {victim} 因为 {murderer} 注定要摔死                                , {victim} was doomed to fall by {murderer}
+fall              , {victim} 因为 {murderer} 使用了 {item} 注定要摔死                  , {victim} was doomed to fall by {murderer} using {item}
+fall              , {victim} 摔伤得太重并被 {murderer} 完结了生命                      , {victim} fell too far and was finished by {murderer}
+fall              , {victim} 摔伤得太重并被 {murderer} 用 {item} 完结了生命            , {victim} fell too far and was finished by {murderer} using {item}
+explosion         , {victim} 爆炸了                                                    , {victim} blew up
+player_explosion  , {victim} 被 {murderer} 炸死了                                      , {victim} was blown up by {murderer}
+player_explosion  , {victim} 被 {murderer} 用 {item} 炸死了                            , {victim} was blown up by {murderer} using {item}
+bad_respawn_point , {victim} 被[刻意的游戏设计]杀死了                                  , {victim} was killed by [Intentional Game Design]
+generic           , {victim} 死了                                                      , {victim} died
+generic           , {victim} 死于 {murderer}                                           , {victim} died because of {murderer}
+generic_kill      , {victim} 被杀死了                                                  , {victim} was killed
+generic_kill      , {victim} 在与 {murderer} 战斗时被杀死了                            , {victim} was killed while fighting {murderer}
+even_more_magic   , {victim} 被不为人知的魔法杀死了                                    , {victim} was killed by even more magic

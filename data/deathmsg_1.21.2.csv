@@ -1,0 +1,101 @@
+伤害类型,死亡消息,deathmsg_en
+player_attack,死者被击杀者杀死了,<player> was slain by <player/mob>
+player_attack,死者被击杀者用物品杀死了,<player> was slain by <player/mob> using <item>
+mob_attack,死者被击杀者杀死了,<player> was slain by <player/mob>
+mob_attack,死者被击杀者用物品杀死了,<player> was slain by <player/mob> using <item>
+sting,死者被蛰死了,<player> was stung to death
+sting,死者被击杀者用物品蛰死了,<player> was stung to death by <player/mob> using <item>
+sting,死者被击杀者蛰死了,<player> was stung to death by <player/mob>
+arrow,死者被击杀者射杀,<player> was shot by <player/mob>
+arrow,死者被击杀者用物品射杀,<player> was shot by <player/mob> using <item>
+trident,死者被击杀者刺穿了,<player> was impaled by <player/mob>
+trident,死者被击杀者用物品刺穿了,<player> was impaled by <player/mob> with <item>
+fireball,死者被击杀者用火球烧死了,<player> was fireballed by <player/mob>
+fireball,死者被击杀者用物品发射的火球烧死了,<player> was fireballed by <player/mob> using <item>
+thrown,死者被击杀者给砸死了,<player> was pummeled by <player/mob>
+thrown,死者被击杀者用物品给砸死了,<player> was pummeled by <player/mob> using <item>
+fireworks,死者随着一声巨响消失了,<player> went off with a bang
+fireworks,死者随着击杀者用物品发射的烟花发出的巨响消失了,<player> went off with a bang due to a firework fired from <item> by <player/mob>
+fireworks,死者在与击杀者战斗时随着一声巨响消失了,<player> went off with a bang while fighting <player/mob>
+wither_skull,死者被击杀者发射的头颅射杀,<player> was shot by a skull from <player/mob>
+wither_skull,死者被击杀者用物品发射的头颅射杀,<player> was shot by a skull from <player/mob> using <item>
+thorns,死者在试图伤害击杀者时被杀,<player> was killed while trying to hurt <player/mob>
+thorns,死者在试图伤害击杀者时被物品杀死,<player> was killed by <item> while trying to hurt <player/mob>
+indirect_magic,死者被击杀者使用的魔法杀死了,<player> was killed by <player/mob> using magic
+indirect_magic,死者被击杀者用物品杀死了,<player> was killed by <player/mob> using <item>
+sonic_boom,死者被一道音波尖啸抹除了,<player> was obliterated by a sonically-charged shriek
+sonic_boom,死者在试图逃离持有物品的击杀者时被一道音波尖啸抹除了,<player> was obliterated by a sonically-charged shriek while trying to escape <player/mob> wielding <item>
+sonic_boom,死者在试图逃离击杀者时被一道音波尖啸抹除了,<player> was obliterated by a sonically-charged shriek while trying to escape <player/mob>
+dragon_breath,死者被龙息烤熟了,<player> was roasted in dragon's breath
+dragon_breath,死者被击杀者的龙息烤熟了,<player> was roasted in dragon's breath by <player/mob>
+mace_smash,死者被击杀者一锤毙命,<player> was smashed by <player/mob>
+mace_smash,死者被击杀者用物品一锤毙命,<player> was smashed by <player/mob> with <item>
+on_fire,死者被烧死了,<player> burned to death
+on_fire,死者在与持有物品的击杀者战斗时被烤得酥脆,<player> was burned to a crisp while fighting <player/mob> wielding <item>
+on_fire,死者在与击杀者战斗时被烤得酥脆,<player> was burned to a crisp while fighting <player/mob>
+magic,死者被魔法杀死了,<player> was killed by magic
+magic,死者在试图逃离击杀者时被魔法杀死了,<player> was killed by magic while trying to escape <player/mob>
+wither,死者凋零了,<player> withered away
+wither,死者在与击杀者战斗时凋零了,<player> withered away while fighting <player/mob>
+starve,死者饿死了,<player> starved to death
+starve,死者在与击杀者战斗时饿死了,<player> starved to death while fighting <player/mob>
+cactus,死者被戳死了,<player> was pricked to death
+cactus,死者在试图逃离击杀者时撞上了仙人掌,<player> walked into a cactus while trying to escape <player/mob>
+in_fire,死者浴火焚身,<player> went up in flames
+in_fire,死者在与击杀者战斗时不慎走入了火中,<player> walked into fire while fighting <player/mob>
+lava,死者试图在熔岩里游泳,<player> tried to swim in lava
+lava,死者在逃离击杀者时试图在熔岩里游泳,<player> tried to swim in lava to escape <player/mob>
+hot_floor,死者发现了地板是熔岩做的,<player> discovered the floor was lava
+hot_floor,死者因击杀者而步入危险之地,<player> walked into the danger zone due to <player/mob>
+sweet_berry_bush,死者被甜浆果丛刺死了,<player> was poked to death by a sweet berry bush
+sweet_berry_bush,死者在试图逃离击杀者时被甜浆果丛刺死了,<player> was poked to death by a sweet berry bush while trying to escape <player/mob>
+in_wall,死者在墙里窒息而亡,<player> suffocated in a wall
+in_wall,死者在与击杀者战斗时在墙里窒息而亡,<player> suffocated in a wall while fighting <player/mob>
+drown,死者淹死了,<player> drowned
+drown,死者在试图逃离击杀者时淹死了,<player> drowned while trying to escape <player/mob>
+dryout,死者因脱水而死,<entity> died from dehydration
+dryout,死者在试图逃离击杀者时因脱水而死,<entity> died from dehydration while trying to escape <player/mob>
+freeze,死者被冻死了,<player> froze to death
+freeze,死者被击杀者冻死了,<player> was frozen to death by <player/mob>
+cramming,死者因被过度挤压而死,<player> was squished too much
+cramming,死者被击杀者挤扁了,<player> was squashed by <player/mob>
+lightning_bolt,死者被闪电击中,<player> was struck by lightning
+lightning_bolt,死者在与击杀者战斗时被闪电击中,<player> was struck by lightning while fighting <player/mob>
+outside_border,死者脱离了这个世界,<player> left the confines of this world
+outside_border,死者在与击杀者战斗时脱离了这个世界,<player> left the confines of this world while fighting <player/mob>
+out_of_world,死者掉出了这个世界,<player> fell out of the world
+out_of_world,死者与击杀者不共戴天,<player> didn't want to live in the same world as <player/mob>
+fall,死者落地过猛,<player> hit the ground too hard
+fall,死者在试图逃离击杀者时落地过猛,<player> hit the ground too hard while trying to escape <player/mob>
+stalagmite,死者被石笋刺穿了,<player> was impaled on a stalagmite
+stalagmite,死者在与击杀者战斗时被石笋刺穿了,<player> was impaled on a stalagmite while fighting <player/mob>
+falling_anvil,死者被下落的铁砧压扁了,<player> was squashed by a falling anvil
+falling_anvil,死者在与击杀者战斗时被下落的铁砧压扁了,<player> was squashed by a falling anvil while fighting <player/mob>
+falling_stalactite,死者被下落的钟乳石刺穿了,<player> was skewered by a falling stalactite
+falling_stalactite,死者在与击杀者战斗时被下落的钟乳石刺穿了,<player> was skewered by a falling stalactite while fighting <player/mob>
+falling_block,死者被下落的方块压扁了,<player> was squashed by a falling block
+falling_block,死者在与击杀者战斗时被下落的方块压扁了,<player> was squashed by a falling block while fighting <player/mob>
+fly_into_wall,死者感受到了动能,<player> experienced kinetic energy
+fly_into_wall,死者在试图逃离击杀者时感受到了动能,<player> experienced kinetic energy while trying to escape <player/mob>
+fall,死者从高处摔了下来,<player> fell from a high place
+fall,死者从梯子上摔了下来,<player> fell off a ladder
+fall,死者从脚手架上摔了下来,<player> fell off scaffolding
+fall,死者从藤蔓上摔了下来,<player> fell off some vines
+fall,死者从垂泪藤上摔了下来,<player> fell off some weeping vines
+fall,死者从缠怨藤上摔了下来,<player> fell off some twisting vines
+fall,死者在攀爬时摔了下来,<player> fell while climbing
+fall,death.fell.accident.water,death.fell.accident.water
+fall,死者注定要摔死,<player> was doomed to fall
+fall,死者因为击杀者注定要摔死,<player> was doomed to fall by <player/mob>
+fall,死者因为击杀者使用了物品注定要摔死,<player> was doomed to fall by <player/mob> using <item>
+fall,死者摔伤得太重并被击杀者完结了生命,<player> fell too far and was finished by <player/mob>
+fall,死者摔伤得太重并被击杀者用物品完结了生命,<player> fell too far and was finished by <player/mob> using <item>
+explosion,死者爆炸了,<player> blew up
+player_explosion,死者被击杀者炸死了,<player> was blown up by <player/mob>
+player_explosion,死者被击杀者用物品炸死了,<player> was blown up by <player/mob> using <item>
+bad_respawn_point,死者被[刻意的游戏设计]杀死了,<player> was killed by [Intentional Game Design]
+generic,死者死了,<player> died
+generic,死者死于击杀者,<player> died because of <player/mob>
+generic_kill,死者被杀死了,<player> was killed
+generic_kill,死者在与击杀者战斗时被杀死了,<player> was killed while fighting <player/mob>
+even_more_magic,死者被不为人知的魔法杀死了,<player> was killed by even more magic

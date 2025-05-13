@@ -1,85 +1,101 @@
-{victim} was shot by {murderer}
-{victim} was shot by {murderer} using {item}
-{victim} was pummeled by {murderer}
-{victim} was pummeled by {murderer} using {item}
-{victim} was pricked to death
-{victim} walked into a cactus whilst trying to escape {murderer}
-{victim} drowned
-{victim} drowned whilst trying to escape {murderer}
-{victim} experienced kinetic energy
-{victim} experienced kinetic energy whilst trying to escape {murderer}
-{victim} blew up
-{victim} was blown up by {murderer}
-{victim} was blown up by {murderer} using {item}
-{victim} was killed by [Intentional Game Design]
-{victim} hit the ground too hard
-{victim} hit the ground too hard whilst trying to escape {murderer}
-{victim} fell from a high place
-{victim} fell off a ladder
-{victim} fell off some vines
-{victim} fell off some weeping vines
-{victim} fell off some twisting vines
-{victim} fell off scaffolding
-{victim} fell while climbing
-{victim} was impaled on a stalagmite
-{victim} was impaled on a stalagmite whilst fighting {murderer}
-{victim} was squashed by a falling anvil
-{victim} was squashed by a falling anvil whilst fighting {murderer}
-{victim} was squashed by a falling block
-{victim} was squashed by a falling block whilst fighting {murderer}
-{victim} was skewered by a falling stalactite
-{victim} was skewered by a falling stalactite whilst fighting {murderer}
-{victim} went up in flames
-{victim} walked into fire whilst fighting {murderer}
-{victim} burned to death
-{victim} was burnt to a crisp whilst fighting {murderer}
-{victim} went off with a bang
-{victim} went off with a bang due to a firework fired from {item} by {murderer}
-{victim} tried to swim in lava
-{victim} tried to swim in lava to escape {murderer}
-{victim} was struck by lightning
-{victim} was struck by lightning whilst fighting {murderer}
-{victim} discovered the floor was lava
-{victim} walked into danger zone due to {murderer}
-{victim} was killed by magic
-{victim} was killed by magic whilst trying to escape {murderer}
-{victim} was killed by {murderer} using magic
-{victim} was killed by {murderer} using {item}
-{victim} froze to death
-{victim} was frozen to death by {murderer}
-{victim} was slain by {murderer}
-{victim} was slain by {murderer} using {item}
-{victim} was fireballed by {murderer}
-{victim} was fireballed by {murderer} using {item}
-{victim} was stung to death
-{victim} was shot by a skull from {murderer}
-{victim} starved to death
-{victim} starved to death whilst fighting {murderer}
-{victim} suffocated in a wall
-{victim} suffocated in a wall whilst fighting {murderer}
-{victim} was squished too much
-{victim} was squashed by {murderer}
-{victim} was poked to death by a sweet berry bush
-{victim} was poked to death by a sweet berry bush whilst trying to escape {murderer}
-{victim} was killed trying to hurt {murderer}
-{victim} was killed by {item} trying to hurt {murderer}
-{victim} was impaled by {murderer}
-{victim} was impaled by {murderer} with {item}
-{victim} fell out of the world
-{victim} didn't want to live in the same world as {murderer}
-{victim} withered away
-{victim} withered away whilst fighting {murderer}
-{victim} died from dehydration
-{victim} died from dehydration whilst trying to escape {murderer}
-{victim} died
-{victim} died because of {murderer}
-{victim} was roasted in dragon breath
-{victim} was roasted in dragon breath by {murderer}
-{victim} was doomed to fall
-{victim} was doomed to fall by {murderer}
-{victim} was doomed to fall by {murderer} using {item}
-{victim} fell too far and was finished by {murderer}
-{victim} fell too far and was finished by {murderer} using {item}
-{victim} was stung to death by {murderer}
-{victim} went off with a bang whilst fighting {murderer}
-{victim} was killed by even more magic
+ deathmsg_en
+ {victim} was slain by {murderer}
+ {victim} was slain by {murderer} using {item}
+ {victim} was slain by {murderer}
+ {victim} was slain by {murderer} using {item}
+ {victim} was stung to death
+ {victim} was stung to death by {murderer} using {item}
+ {victim} was stung to death by {murderer}
+ {victim} was shot by {murderer}
+ {victim} was shot by {murderer} using {item}
+ {victim} was impaled by {murderer}
+ {victim} was impaled by {murderer} with {item}
+ {victim} was fireballed by {murderer}
+ {victim} was fireballed by {murderer} using {item}
+ {victim} was pummeled by {murderer}
+ {victim} was pummeled by {murderer} using {item}
+ {victim} went off with a bang
+ {victim} went off with a bang due to a firework fired from {item} by {murderer}
+ {victim} went off with a bang while fighting {murderer}
+ {victim} was shot by a skull from {murderer}
+ {victim} was shot by a skull from {murderer} using {item}
+ {victim} was killed while trying to hurt {murderer}
+ {victim} was killed by {item} while trying to hurt {murderer}
+ {victim} was killed by {murderer} using magic
+ {victim} was killed by {murderer} using {item}
+ {victim} was obliterated by a sonically-charged shriek
+ {victim} was obliterated by a sonically-charged shriek while trying to escape {murderer} wielding {item}
+ {victim} was obliterated by a sonically-charged shriek while trying to escape {murderer}
+ {victim} was roasted in dragon's breath
+ {victim} was roasted in dragon's breath by {murderer}
+ {victim} was smashed by {murderer}
+ {victim} was smashed by {murderer} with {item}
+ {victim} burned to death
+ {victim} was burned to a crisp while fighting {murderer} wielding {item}
+ {victim} was burned to a crisp while fighting {murderer}
+ {victim} was killed by magic
+ {victim} was killed by magic while trying to escape {murderer}
+ {victim} withered away
+ {victim} withered away while fighting {murderer}
+ {victim} starved to death
+ {victim} starved to death while fighting {murderer}
+ {victim} was pricked to death
+ {victim} walked into a cactus while trying to escape {murderer}
+ {victim} went up in flames
+ {victim} walked into fire while fighting {murderer}
+ {victim} tried to swim in lava
+ {victim} tried to swim in lava to escape {murderer}
+ {victim} discovered the floor was lava
+ {victim} walked into the danger zone due to {murderer}
+ {victim} was poked to death by a sweet berry bush
+ {victim} was poked to death by a sweet berry bush while trying to escape {murderer}
+ {victim} suffocated in a wall
+ {victim} suffocated in a wall while fighting {murderer}
+ {victim} drowned
+ {victim} drowned while trying to escape {murderer}
+ {victim} died from dehydration
+ {victim} died from dehydration while trying to escape {murderer}
+ {victim} froze to death
+ {victim} was frozen to death by {murderer}
+ {victim} was squished too much
+ {victim} was squashed by {murderer}
+ {victim} was struck by lightning
+ {victim} was struck by lightning while fighting {murderer}
+ {victim} left the confines of this world
+ {victim} left the confines of this world while fighting {murderer}
+ {victim} fell out of the world
+ {victim} didn't want to live in the same world as {murderer}
+ {victim} hit the ground too hard
+ {victim} hit the ground too hard while trying to escape {murderer}
+ {victim} was impaled on a stalagmite
+ {victim} was impaled on a stalagmite while fighting {murderer}
+ {victim} was squashed by a falling anvil
+ {victim} was squashed by a falling anvil while fighting {murderer}
+ {victim} was skewered by a falling stalactite
+ {victim} was skewered by a falling stalactite while fighting {murderer}
+ {victim} was squashed by a falling block
+ {victim} was squashed by a falling block while fighting {murderer}
+ {victim} experienced kinetic energy
+ {victim} experienced kinetic energy while trying to escape {murderer}
+ {victim} fell from a high place
+ {victim} fell off a ladder
+ {victim} fell off scaffolding
+ {victim} fell off some vines
+ {victim} fell off some weeping vines
+ {victim} fell off some twisting vines
+ {victim} fell while climbing
+ death.fell.accident.water
+ {victim} was doomed to fall
+ {victim} was doomed to fall by {murderer}
+ {victim} was doomed to fall by {murderer} using {item}
+ {victim} fell too far and was finished by {murderer}
+ {victim} fell too far and was finished by {murderer} using {item}
+ {victim} blew up
+ {victim} was blown up by {murderer}
+ {victim} was blown up by {murderer} using {item}
+ {victim} was killed by [Intentional Game Design]
+ {victim} died
+ {victim} died because of {murderer}
+ {victim} was killed
+ {victim} was killed while fighting {murderer}
+ {victim} was killed by even more magic
