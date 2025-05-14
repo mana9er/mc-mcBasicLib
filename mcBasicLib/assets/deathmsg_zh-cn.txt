@@ -5,8 +5,6 @@
 {victim} 被蛰死了
 {victim} 被 {murderer} 用 {item} 蛰死了
 {victim} 被 {murderer} 蛰死了
-{victim} 被 {murderer} 射杀
-{victim} 被 {murderer} 用 {item} 射杀
 {victim} 被 {murderer} 刺穿了
 {victim} 被 {murderer} 用 {item} 刺穿了
 {victim} 被 {murderer} 用火球烧死了
@@ -18,6 +16,8 @@
 {victim} 在与 {murderer} 战斗时随着一声巨响消失了
 {victim} 被 {murderer} 发射的头颅射杀
 {victim} 被 {murderer} 用 {item} 发射的头颅射杀
+{victim} 被 {murderer} 射杀
+{victim} 被 {murderer} 用 {item} 射杀
 {victim} 在试图伤害 {murderer} 时被杀
 {victim} 在试图伤害 {murderer} 时被 {item} 杀死
 {victim} 被 {murderer} 使用的魔法杀死了

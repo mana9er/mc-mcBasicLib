@@ -6,8 +6,6 @@ mob_attack,{victim} 被 {murderer} 用 {item} 杀死了,{victim} was slain by {m
 sting,{victim} 被蛰死了,{victim} was stung to death
 sting,{victim} 被 {murderer} 用 {item} 蛰死了,{victim} was stung to death by {murderer} using {item}
 sting,{victim} 被 {murderer} 蛰死了,{victim} was stung to death by {murderer}
-arrow,{victim} 被 {murderer} 射杀,{victim} was shot by {murderer}
-arrow,{victim} 被 {murderer} 用 {item} 射杀,{victim} was shot by {murderer} using {item}
 trident,{victim} 被 {murderer} 刺穿了,{victim} was impaled by {murderer}
 trident,{victim} 被 {murderer} 用 {item} 刺穿了,{victim} was impaled by {murderer} with {item}
 fireball,{victim} 被 {murderer} 用火球烧死了,{victim} was fireballed by {murderer}
@@ -19,6 +17,8 @@ fireworks,{victim} 随着 {murderer} 用 {item} 发射的烟花发出的巨响�
 fireworks,{victim} 在与 {murderer} 战斗时随着一声巨响消失了,{victim} went off with a bang while fighting {murderer}
 wither_skull,{victim} 被 {murderer} 发射的头颅射杀,{victim} was shot by a skull from {murderer}
 wither_skull,{victim} 被 {murderer} 用 {item} 发射的头颅射杀,{victim} was shot by a skull from {murderer} using {item}
+arrow,{victim} 被 {murderer} 射杀,{victim} was shot by {murderer}
+arrow,{victim} 被 {murderer} 用 {item} 射杀,{victim} was shot by {murderer} using {item}
 thorns,{victim} 在试图伤害 {murderer} 时被杀,{victim} was killed while trying to hurt {murderer}
 thorns,{victim} 在试图伤害 {murderer} 时被 {item} 杀死,{victim} was killed by {item} while trying to hurt {murderer}
 indirect_magic,{victim} 被 {murderer} 使用的魔法杀死了,{victim} was killed by {murderer} using magic
