@@ -1,3 +1,4 @@
+deathmsg_en
 {victim} was slain by {murderer}
 {victim} was slain by {murderer} using {item}
 {victim} was slain by {murderer}
@@ -56,8 +57,6 @@
 {victim} died from dehydration while trying to escape {murderer}
 {victim} froze to death
 {victim} was frozen to death by {murderer}
-{victim} was squished too much
-{victim} was squashed by {murderer}
 {victim} was struck by lightning
 {victim} was struck by lightning while fighting {murderer}
 {victim} left the confines of this world
@@ -74,6 +73,8 @@
 {victim} was skewered by a falling stalactite while fighting {murderer}
 {victim} was squashed by a falling block
 {victim} was squashed by a falling block while fighting {murderer}
+{victim} was squished too much
+{victim} was squashed by {murderer}
 {victim} experienced kinetic energy
 {victim} experienced kinetic energy while trying to escape {murderer}
 {victim} fell from a high place

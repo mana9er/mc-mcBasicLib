@@ -1,3 +1,4 @@
+死亡消息
 {victim} 被 {murderer} 杀死了
 {victim} 被 {murderer} 用 {item} 杀死了
 {victim} 被 {murderer} 杀死了
@@ -56,8 +57,6 @@
 {victim} 在试图逃离 {murderer} 时因脱水而死
 {victim} 被冻死了
 {victim} 被 {murderer} 冻死了
-{victim} 因被过度挤压而死
-{victim} 被 {murderer} 挤扁了
 {victim} 被闪电击中
 {victim} 在与 {murderer} 战斗时被闪电击中
 {victim} 脱离了这个世界
@@ -74,6 +73,8 @@
 {victim} 在与 {murderer} 战斗时被下落的钟乳石刺穿了
 {victim} 被下落的方块压扁了
 {victim} 在与 {murderer} 战斗时被下落的方块压扁了
+{victim} 因被过度挤压而死
+{victim} 被 {murderer} 挤扁了
 {victim} 感受到了动能
 {victim} 在试图逃离 {murderer} 时感受到了动能
 {victim} 从高处摔了下来

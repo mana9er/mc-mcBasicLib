@@ -57,8 +57,6 @@ dryout,{victim} 因脱水而死,{victim} died from dehydration
 dryout,{victim} 在试图逃离 {murderer} 时因脱水而死,{victim} died from dehydration while trying to escape {murderer}
 freeze,{victim} 被冻死了,{victim} froze to death
 freeze,{victim} 被 {murderer} 冻死了,{victim} was frozen to death by {murderer}
-cramming,{victim} 因被过度挤压而死,{victim} was squished too much
-cramming,{victim} 被 {murderer} 挤扁了,{victim} was squashed by {murderer}
 lightning_bolt,{victim} 被闪电击中,{victim} was struck by lightning
 lightning_bolt,{victim} 在与 {murderer} 战斗时被闪电击中,{victim} was struck by lightning while fighting {murderer}
 outside_border,{victim} 脱离了这个世界,{victim} left the confines of this world
@@ -75,6 +73,8 @@ falling_stalactite,{victim} 被下落的钟乳石刺穿了,{victim} was skewered
 falling_stalactite,{victim} 在与 {murderer} 战斗时被下落的钟乳石刺穿了,{victim} was skewered by a falling stalactite while fighting {murderer}
 falling_block,{victim} 被下落的方块压扁了,{victim} was squashed by a falling block
 falling_block,{victim} 在与 {murderer} 战斗时被下落的方块压扁了,{victim} was squashed by a falling block while fighting {murderer}
+cramming,{victim} 因被过度挤压而死,{victim} was squished too much
+cramming,{victim} 被 {murderer} 挤扁了,{victim} was squashed by {murderer}
 fly_into_wall,{victim} 感受到了动能,{victim} experienced kinetic energy
 fly_into_wall,{victim} 在试图逃离 {murderer} 时感受到了动能,{victim} experienced kinetic energy while trying to escape {murderer}
 fall,{victim} 从高处摔了下来,{victim} fell from a high place

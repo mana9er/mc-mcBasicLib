@@ -1,6 +1,6 @@
-{player}取得了进度[{name}]
-{player}完成了挑战[{name}]
-{player}达成了目标[{name}]
+{player} 取得了进度 [{name}]
+{player} 完成了挑战 [{name}]
+{player} 达成了目标 [{name}]
 Minecraft
 石器时代
 获得升级
